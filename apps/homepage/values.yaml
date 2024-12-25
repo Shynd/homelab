@@ -148,16 +148,10 @@ app-template:
           - Infrastructure:
             - Router:
               - href: https://192.168.1.1
-                icon: router.svg
-            - Proxmox:
-              - href: https://proxmox:8006
-                icon: proxmox.svg
-            - Google Cloud:
-              - href: https://console.cloud.google.com
-                icon: google-cloud-platform.svg
-            - Oracle Cloud:
-              - href: https://cloud.oracle.com
-                icon: oracle-cloud.svg
+                icon: unifi.svg
+            - pi-hole:
+              - href: http://192.168.30.250/admin
+              icon: pi-hole.svg
           - Proxmox cluster:
             - chase.echo.lab:
               - href: https://192.168.30.30:8006
@@ -171,6 +165,3 @@ app-template:
             - pbs.echo.lab:
               - href: https://192.168.30.4:8007
                 icon: proxmox.svg
-            - pihole:
-              - href: http://192.168.30.250/admin
-                icon: pi-hole.svg
