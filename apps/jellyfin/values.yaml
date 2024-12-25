@@ -29,6 +29,10 @@ app-template:
           image:
             repository: docker.io/fallenbagel/jellyseerr
             tag: 1.7.0
+        flaresolverr:
+          image:
+            repository: ghcr.io/flaresolverr/flaresolverr
+            tag: 3.3.21
   service:
     main:
       ports:
@@ -49,6 +53,9 @@ app-template:
           protocol: HTTP
         jellyseerr:
           port: 5055
+          protocol: HTTP
+        flaresolverr:
+          port: 8191
           protocol: HTTP
   ingress:
     main:
