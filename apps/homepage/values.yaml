@@ -133,7 +133,7 @@ app-template:
               - href: https://homelab.havki.no
                 icon: google-docs.svg
             - Public homelab repository:
-              - href: https://github.com/khuedoan/homelab
+              - href: https://github.com/shynd/homelab
                 icon: github.svg
           - Managed services:
             - Cloudflare:
@@ -142,6 +142,9 @@ app-template:
             - Terraform Cloud:
               - href: https://app.terraform.io
                 icon: terraform.svg
+            - Tailscale VPN:
+              - href: https://login.tailscale.com/admin/machines
+                icon: tailscale.svg
           - Infrastructure:
             - Router:
               - href: https://192.168.1.1
@@ -155,3 +158,19 @@ app-template:
             - Oracle Cloud:
               - href: https://cloud.oracle.com
                 icon: oracle-cloud.svg
+          - Proxmox cluster:
+            - chase.echo.lab:
+              - href: https://192.168.30.30:8006
+                icon: proxmox.svg
+            - kudzu.echo.lab:
+              - href: https://192.168.30.31:8006
+                icon: proxmox.svg
+            - leo.echo.lab:
+              - href: https://192.168.30.32:8006
+                icon: proxmox.svg
+            - pbs.echo.lab:
+              - href: https://192.168.30.4:8007
+                icon: proxmox.svg
+            - pihole:
+              - href: http://192.168.30.250/admin
+                icon: pi-hole.svg
