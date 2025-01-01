@@ -3,6 +3,7 @@
   roles:
     - prerequisites
     - k3s
+    - wazuh_agent
     - automatic_upgrade
 
 - name: Install Kubernetes addons
