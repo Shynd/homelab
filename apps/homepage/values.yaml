@@ -145,9 +145,6 @@ app-template:
             - Tailscale VPN:
               - href: https://login.tailscale.com/admin/machines
                 icon: tailscale.svg
-            - Wazuh:
-              - href: https://192.168.30.52:443
-                icon: wazuh.svg
           - Infrastructure:
             - Router:
               - href: https://192.168.1.1
@@ -155,6 +152,9 @@ app-template:
             - pi-hole:
               - href: http://192.168.30.250/admin
               icon: pi-hole.svg
+            - Wazuh:
+              - href: https://192.168.30.52:443
+                icon: wazuh.svg
           - Proxmox cluster:
             - chase.echo.lab:
               - href: https://192.168.30.30:8006
