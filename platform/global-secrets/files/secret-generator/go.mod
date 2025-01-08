@@ -1,4 +1,4 @@
-module git.havki.no/khuedoan/homelab/platform/secret-generator
+module git.havki.no/ops/homelab/platform/secret-generator
 
 go 1.21
 
