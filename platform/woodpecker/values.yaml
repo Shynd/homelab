@@ -28,3 +28,15 @@ woodpecker:
         - secretName: woodpecker-tls-certificate
           hosts:
             - *host
+    prometheus:
+      podmonitor:
+        enabled: true
+      rules:
+        enabled: true
+    grafana:
+      dashboards:
+        enabled: true
+        labels:
+          grafana_dashboard: "1"
+    metrics:
+      enabled: true

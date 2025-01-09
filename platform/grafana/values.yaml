@@ -17,6 +17,8 @@ grafana:
     datasources:
       enabled: true
       searchNamespace: monitoring-system
+    plugins:
+      enabled: true
   envFromSecret: grafana-secrets
   grafana.ini:
     server:
@@ -31,3 +33,5 @@ grafana:
       auth_url: https://dex.havki.no/auth
       token_url: https://dex.havki.no/token
       api_url: https://dex.havki.no/userinfo
+  serviceMonitor:
+    enabled: true
