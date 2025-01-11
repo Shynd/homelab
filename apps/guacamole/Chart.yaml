@@ -1,0 +1,10 @@
+apiVersion: v2
+name: guacamole
+version: 0.0.0
+dependencies:
+  - name: guacamole
+    version: 1.4.1
+    repository: https://charts.beryju.org
+  - name: postgresql
+    version: 12.2.*
+    repository: https://charts.bitnami.com/bitnami

@@ -1,0 +1,26 @@
+guacamole:
+  guacamole:
+    settings:
+      POSTGRES_HOSTNAME: guacamole-postgresql.guacamole.svc.cluster.local
+  ingress:
+    enabled: true
+    className: nginx
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-prod
+      hajimari.io/appName: Guacamole
+      hajimari.io/icon: remote-desktop
+    hosts:
+      - host: &host guacamole.havki.no
+        paths:
+          - /
+    tls:
+      - secretName: guacamole-tls-certificate
+        hosts:
+          - *host
+  postgres:
+    hostname: guacamole-postgresql.guacamole.svc.cluster.local
+postgresql:
+  auth:
+    username: guacamole
+    password: password
+    database: guacamole
