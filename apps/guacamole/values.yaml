@@ -1,5 +1,5 @@
 guacamole:
-  guacamole:
+  guacamole-app:
     settings:
       POSTGRES_HOSTNAME: guacamole-postgresql.guacamole.svc.cluster.local
   ingress:
