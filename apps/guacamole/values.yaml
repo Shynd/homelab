@@ -2,6 +2,10 @@ guacamole:
   guacamole:
     settings:
       POSTGRES_HOSTNAME: guacamole-postgresql.guacamole.svc.cluster.local
+      POSTGRES_DATABASE: guacamole
+      POSTGRES_USER: guacamole
+      # todo below: auto generate this as a an external secret, the service might be internal but hardcoding is still bad
+      POSTGRES_PASSWORD: password # same as below --> postgresql.auth.password
   ingress:
     enabled: true
     className: nginx
@@ -24,3 +28,6 @@ postgresql:
     username: guacamole
     password: password
     database: guacamole
+  primary:
+    persistence:
+      enabled: true # enasure persistance of data
