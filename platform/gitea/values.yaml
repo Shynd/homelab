@@ -37,7 +37,3 @@ gitea:
         ENABLED: false
       webhook:
         ALLOWED_HOST_LIST: private
-    metrics:
-      enabled: true
-      serviceMonitor:
-        enabled: true
