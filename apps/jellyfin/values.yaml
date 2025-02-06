@@ -8,7 +8,7 @@ app-template:
         main:
           image:
             repository: docker.io/jellyfin/jellyfin
-            tag: 10.10.4
+            tag: 10.10.5
         transmission:
           image:
             repository: lscr.io/linuxserver/transmission
@@ -16,11 +16,11 @@ app-template:
         prowlarr:
           image:
             repository: lscr.io/linuxserver/prowlarr
-            tag: 1.29.2
+            tag: 1.30.2
         radarr:
           image:
             repository: lscr.io/linuxserver/radarr
-            tag: 5.17.2
+            tag: 5.18.4
         sonarr:
           image:
             repository: lscr.io/linuxserver/sonarr
